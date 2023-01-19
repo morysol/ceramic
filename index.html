@@ -9,91 +9,116 @@
   </head>
   <body>
     <header class="header">
-      <ul class="top-menu">
-        <li class="top-menu__item">
-          <a href="#" class="top-menu__link">Logo</a>
-        </li>
-        <li class="top-menu__item">
-          +7 926 780 3663
-          <a href="tel:+79267803663" class="top-menu__link"> Обратный звонок</a>
-        </li>
-        <li class="top-menu__item">
-          <input type="text" placeholder="Поиск" />
-        </li>
-        <li class="top-menu__item">
-          <a href="#" class="top-menu__link">favorites</a>
-        </li>
-        <li class="top-menu__item">
-          <a href="#" class="top-menu__link">price</a>
-        </li>
-        <li class="top-menu__item">
-          <a href="#" class="top-menu__link">profile</a>
-        </li>
-      </ul>
-      <nav class="main-navigation">
-        <ul class="main-catalog">
-          <li class="main-catalog__item">
-            <a href="#" class="main-navigation__link">Каталог</a>
-          </li>
-        </ul>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">О нас</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Акции</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Новости</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="wrapper">
+        <div class="top-menu">
+          <div class="top-logo">
+            <a href="#" class="top-menu__link">Logo</a>
+          </div>
+
+          <ul class="top-menu__list">
+            <li class="top-menu__item top-menu__item--callback">
+              <span class="phone-number">+7 926 780 3663</span>
+              <a href="tel:+79267803663" class="top-menu__link--callback">
+                Обратный звонок</a
+              >
+            </li>
+            <li class="top-menu__item search">
+              <input class="search--input" type="text" placeholder="Поиск" />
+            </li>
+            <li class="top-menu__item">
+              <a href="#" class="top-menu__link">favorites</a>
+            </li>
+            <li class="top-menu__item">
+              <a href="#" class="top-menu__link">price</a>
+            </li>
+            <li class="top-menu__item">
+              <a href="#" class="top-menu__link">profile</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="main-navigation">
+          <div class="main-catalog">
+            <h3 class="main-catalog__header">Каталог</h3>
+            <ul class="main-catalog__list">
+              <li class="main-catalog__item">
+                <a href="#" class="main-navigation__link"></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">О нас</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Акции</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Новости</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section class="aboutus">
-        <h2>Коротко о нас</h2>
-        <p>
-          Мы, Фабрика Декора "КерамикЪ", уже много лет специализируемся на ретро
-          электрике. За годы существования из увлекшихся любителей с горящими
-          глазами наша команда превратилась в настоящих с большой буквы
-          Профессионалов своего дела. Но искра в наших глазах совершенно не
-          затухла! Сегодня, мы планомерно работаем над тем, чтоб вырастить в
-          таких же Профессионалов новых членов нашей команды.
-        </p>
-        <button>Подробнее</button>
-        <img src="" alt="chandelier" />
+        <div class="wrapper wrapper--flex">
+          <div class="wrapper--aboutus">
+            <h2>Коротко о нас</h2>
+            <p>
+              Мы, Фабрика Декора "КерамикЪ", уже много лет специализируемся на
+              ретро электрике. За годы существования из увлекшихся любителей с
+              горящими глазами наша команда превратилась в настоящих с большой
+              буквы Профессионалов своего дела. Но искра в наших глазах
+              совершенно не затухла! Сегодня, мы планомерно работаем над тем,
+              чтоб вырастить в таких же Профессионалов новых членов нашей
+              команды.
+            </p>
+            <button class="btn--more">Подробнее</button>
+          </div>
+
+          <img src="" alt="chandelier" />
+        </div>
       </section>
       <section class="footer">
-        <div class="footer-wrapper">
+        <div class="wrapper wrapper--flex">
           <ul class="footer__subscribe">
-            <li><h2 class="footer__header">ПОДПИСАТЬСЯ</h2></li>
+            <li>
+              <h2 class="footer__header">ПОДПИСАТЬСЯ</h2>
+            </li>
             <li>
               Подпишитесь на наши новости и узнавайте первыми о самом
               интересном, что происходит в увлекательном мире ретро электрики.
             </li>
-            <li>
-              <input type="email" placeholder="ВВедите E-mail адрес" />
-              <button type="button">Подписаться</button>
+            <li class="item--subsribe">
+              <input
+                class="input--subscribe"
+                type="email"
+                placeholder="ВВедите E-mail адрес"
+              />
+              <button class="btn--subscribe" type="button">Подписаться</button>
             </li>
           </ul>
 
           <ul class="footer__info">
             <li><h2 class="footer__header">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h2></li>
             <li>
-              <a href="#" class="footer__link">Наши контакты</a>Наши контакты
+              <a href="#" class="footer__link">Наши контакты</a>
             </li>
             <li>
-              <a href="#" class="footer__link">Сотрудничество</a>Сотрудничество
+              <a href="#" class="footer__link">Сотрудничество</a>
             </li>
-            <li><a href="#" class="footer__link">Монтаж</a>Монтаж</li>
-            <li><a href="#" class="footer__link">Карта сайта</a>Карта сайта</li>
+            <li><a href="#" class="footer__link">Монтаж</a></li>
+            <li>
+              <a href="#" class="footer__link">Карта сайта</a>
+            </li>
           </ul>
 
           <ul class="footer__buy">
@@ -122,7 +147,11 @@
             </li>
           </ul>
         </div>
-        <div class="copyright">Copyright © 2019 | ФД "КерамикЪ"</div>
+      </section>
+      <section class="copyright">
+        <div class="wrapper">
+          <p>Copyright © 2019 | ФД "КерамикЪ"</p>
+        </div>
       </section>
     </main>
   </body>
