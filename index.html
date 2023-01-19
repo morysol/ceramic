@@ -12,7 +12,16 @@
       <div class="wrapper">
         <div class="top-menu">
           <div class="top-logo">
-            <a href="#" class="top-menu__link">Logo</a>
+            <img
+              class="logo-img--mobile"
+              src="./img/logo-top-mob.svg"
+              alt="main logo"
+            />
+            <img
+              class="logo-img--desktop"
+              src="./img/logo-top.svg"
+              alt="main logo"
+            />
           </div>
 
           <ul class="top-menu__list">
@@ -24,24 +33,117 @@
             </li>
             <li class="top-menu__item search">
               <input class="search--input" type="text" placeholder="Поиск" />
+              <svg id="search" width="15" height="15">
+                <use href="./img/search.svg#search"></use>
+              </svg>
             </li>
             <li class="top-menu__item">
-              <a href="#" class="top-menu__link">favorites</a>
+              <a href="www.google.com" class="top-menu__link">
+                <svg id="heart" width="25" height="22">
+                  <use href="./img/heart.svg#heart"></use>
+                </svg>
+              </a>
             </li>
             <li class="top-menu__item">
-              <a href="#" class="top-menu__link">price</a>
+              <a href="www.google.com" class="top-menu__link">
+                <svg id="bag" width="18" height="22">
+                  <use href="./img/bag.svg#bag"></use>
+                </svg>
+              </a>
+              <span class="move-right">15 354 руб.</span>
             </li>
             <li class="top-menu__item">
-              <a href="#" class="top-menu__link">profile</a>
+              <a href="www.google.com" class="top-menu__link">
+                <svg id="user" width="22" height="22">
+                  <use href="./img/user.svg#user"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <nav class="main-navigation">
-          <div class="main-catalog">
+          <div class="main-catalog dropdown">
             <h3 class="main-catalog__header">Каталог</h3>
-            <ul class="main-catalog__list">
+            <ul class="main-catalog__list dropdown-content">
               <li class="main-catalog__item">
-                <a href="#" class="main-navigation__link"></a>
+                <a href="#" class="main-catalog__link">ВСЕ ТОВАРЫ</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg class="mobile-icon" id="01_socket" width="50" height="50">
+                  <use href="./img/mobile/01_socket.svg#01_socket"></use>
+                </svg>
+                <a href="#" class="main-catalog__link">РОЗЕТКИ</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg class="mobile-icon" id="02_switch" width="50" height="50">
+                  <use href="./img/mobile/02_switch-off.svg#02_switch"></use>
+                </svg>
+                <a href="#" class="main-catalog__link">ВЫКЛЮЧАТЕЛИ</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg
+                  class="mobile-icon"
+                  id="03_component"
+                  width="50"
+                  height="50"
+                >
+                  <use href="./img/mobile/03_component.svg#03_component"></use>
+                </svg>
+                <a href="#" class="main-catalog__link">РАСПАЕЧНЫЕ КОРОБКИ</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg class="mobile-icon" id="04_shield" width="50" height="50">
+                  <use href="./img/mobile/04_shield.svg#04_shield"></use>
+                </svg>
+                <a href="#" class="main-catalog__link">КАБЕЛЬНЫЕ ИЗОЛЯТОРЫ</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg class="mobile-icon" id="05_vtulki" width="50" height="50">
+                  <use href="./img/mobile/05_vtulki.svg#05_vtulki"></use>
+                </svg>
+                <a href="#" class="main-catalog__link">ВТУЛКИ</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg class="mobile-icon" id="06_border" width="50" height="50">
+                  <use href="./img/mobile/06_border.svg#06_border"></use>
+                </svg>
+                <a href="#" class="main-catalog__link">РАМКИ</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg class="mobile-icon" id="07_cable" width="50" height="50">
+                  <use href="./img/mobile/07_cable.svg#07_cable"></use>
+                </svg>
+                <a href="#" class="main-catalog__link">ПРОВОДА</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg
+                  class="mobile-icon"
+                  id="08_accessories"
+                  width="50"
+                  height="50"
+                >
+                  <use
+                    href="./img/mobile/08_accessories.svg#08_accessories"
+                  ></use>
+                </svg>
+                <a href="#" class="main-catalog__link">СВЕТИЛЬНИКИ</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg
+                  class="mobile-icon"
+                  id="09_lamp.svg"
+                  width="50"
+                  height="50"
+                >
+                  <use href="./img/mobile/09_lamp.svg#09_lamp.svg"></use>
+                </svg>
+                <a href="#" class="main-catalog__link">ЛАМПЫ</a>
+              </li>
+              <li class="main-catalog__item">
+                <svg class="mobile-icon" id="10_light" width="50" height="50">
+                  <use href="./img/mobile/10_light.svg#10_light"></use>
+                </svg>
+                <a href="#" class="main-catalog__link">АКСЕССУАРЫ</a>
               </li>
             </ul>
           </div>
@@ -84,7 +186,13 @@
             <button class="btn--more">Подробнее</button>
           </div>
 
-          <img src="" alt="chandelier" />
+          <img
+            width="870"
+            height="372"
+            src="./img/lustra_9022-216.jpg"
+            alt="chandelier"
+            class="lustra"
+          />
         </div>
       </section>
       <section class="footer">
@@ -149,8 +257,11 @@
         </div>
       </section>
       <section class="copyright">
-        <div class="wrapper">
+        <div class="wrapper wrapper--flex wrapper--copyright">
           <p>Copyright © 2019 | ФД "КерамикЪ"</p>
+          <svg id="logoB" width="61" height="38">
+            <use href="./img/logo-bottom.svg#logoB"></use>
+          </svg>
         </div>
       </section>
     </main>
